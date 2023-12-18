@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3259b7cfe6.js" crossorigin="anonymous"></script>
+    <title>Portfolio | Portrætbilleder</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="Billeder/underskrift_hvid.svg" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startside</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="hvem-er-jeg.html">Hvem er jeg?</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background-picture">
+        <div class="underside-container">
+            <div class="underside-item">
+                <a href="portfolio.html" class="back-button">Tilbage til portfolio</a>
+            </div>
+            <div class="underside-item">
+                <h1 class="center-text">Portrætbilleder</h1>
+            </div>
+            <div class="underside-item">
+            </div>
+        </div>
+        <hr>
+    <div class="left-grid-container">
+        <div class="left-grid-item-main">
+            <img src="Billeder/portrait-camilla.jpg" alt="Portræt af Camilla" class="main-image" id="mainImage1">
+            <div class="billede-galleri">
+                <img src="Billeder/portrait-camilla.jpg" alt="Portræt af Camilla" class="thumbnail" onclick="changeImage(this, 'mainImage1')">
+                <img src="Billeder/portrait-camilla2.jpg" alt="Portræt af Camilla" class="thumbnail" onclick="changeImage(this, 'mainImage1')">
+            </div>
+        </div>
+        <div class="left-grid-item">
+            <h4>Portrætter af Camilla</h4>
+            <h3>I forbindelse med et ønske om et eventuelt nyt profilbillede, tog jeg billeder af min veninde i Odense på en kirkegård.</h3>
+        </div>
+    </div>
+    <hr>
+    <div class="right-grid-container">
+        <div class="right-grid-item">
+            <h4>Portræt af Sebastian</h4>
+            <h3>Gennem et minikursus på UCL, der omhandlede fotografering, skulle vi lege med forskellige lyskilder. Herfra blev et portræt af Sebastian taget.</h3>
+        </div>
+        <div class="right-grid-item-ver">
+            <img src="Billeder/portrait-sebastian.jpg" alt="Portræt af Sebastian">
+        </div>
+    </div>
+    <hr>
+    <div class="left-grid-container">
+        <div class="left-grid-item-main">
+            <img src="Billeder/portrait-alexander.jpg" alt="Portræt af Alexander" class="main-image" id="mainImage2">
+            <div class="billede-galleri">
+                <img src="Billeder/portrait-alexander.jpg" alt="Portræt af Alexander" class="thumbnail" onclick="changeImage(this, 'mainImage2')">
+                <img src="Billeder/portrait-alexander2.jpg" alt="Portræt af Alexander" class="thumbnail" onclick="changeImage(this, 'mainImage2')">
+            </div>
+        </div>
+        <div class="left-grid-item">
+            <h4>Portrætter af Alexander</h4>
+            <h3>Gennem et minikursus på UCL, der omhandlede fotografering, skulle vi lege med forskellige lyskilder. Herfra blev et portrætter af Alexander taget.</h3>
+        </div>
+    </div>
+    <hr>
+    </div>
+    <div class="center-container">
+        <a href="#" class="up-arrow-btn">Tilbage til toppen</a>
+        </div>
+    <footer>
+        <p>Du kan også finde mig her!</p>
+            <div class="socialemedier">
+                <a href="https://www.facebook.com/frejayun/" target="_blank"><i class="fa-brands fa-facebook"></i></a>  
+            </div>
+            <div class="socialemedier">
+                <a href="https://www.instagram.com/frejayun/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="socialemedier">
+                <a href="https://www.linkedin.com/in/freja-cen-yun-gunnarsson-a109672a1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="x-small-text" >Copyright © Portfolio 2023 - Freja Cen Yun Gunnarsson</p>
+    </footer> 
+    <script>
+        function changeImage(thumbnail, mainImageId) {
+            var imageSrc = thumbnail.src;
+        document.getElementById(mainImageId).src = imageSrc;
+        }
+    </script>
+</body>
+</html>
